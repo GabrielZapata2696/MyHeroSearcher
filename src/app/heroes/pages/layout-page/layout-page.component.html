@@ -1,7 +1,7 @@
 <mat-sidenav-container fullscreen>
   <mat-sidenav #sidenav mode="push" [ngStyle]="{ width: '250px' }">
     <mat-toolbar color="primary">
-      <span>Menú</span>
+      <span class="text-xl">Menú</span>
       <span class="spacer"></span>
     </mat-toolbar>
 
@@ -21,9 +21,14 @@
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon class="mat-18">menu</mat-icon>
     </button>
+    <div class="flex align-content-center flex-wrap" style="min-height: 200px">
+      <span class="text-xl"> My Hero Searcher </span>
+    </div>
     <span class="spacer"></span>
 
-    <button mat-button>Logout</button>
+    <button mat-icon-button>
+      <mat-icon class="mat-18">logout</mat-icon>
+    </button>
   </mat-toolbar>
 
   <div class="container">
