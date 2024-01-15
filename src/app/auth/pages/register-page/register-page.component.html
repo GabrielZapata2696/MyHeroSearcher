@@ -1,0 +1,41 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-subtitle>Crea tu nueva cuenta</mat-card-subtitle>
+    <mat-card-title class="my-2">
+      <span class="text-2xl">Registro</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="flex flex-column">
+      <mat-form-field>
+        <mat-label>Usuario</mat-label>
+        <input matInput type="text" placeholder="Nombre de usuario" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" placeholder="Nombre" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" placeholder="***********" />
+      </mat-form-field>
+
+      <button mat-button mat-flat-button color="primary" class="login-button">
+        <mat-icon>save</mat-icon>
+        Crear cuenta
+      </button>
+    </div>
+
+    <div class="flex justify-content-end my-3">
+      <mat-divider></mat-divider>
+      <a routerLink="/auth/login">¿Ya tienes cuenta?</a>
+    </div>
+  </mat-card-content>
+
+  <mat-card-footer>
+    <mat-progress-bar mode="buffer"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>
