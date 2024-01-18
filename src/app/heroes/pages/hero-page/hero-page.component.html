@@ -8,10 +8,10 @@
 
 <div
   *ngIf="hero; else divLoading"
-  class="grid gap-2 md:gap-4 mt-2 p-2 flex lg:justify-content-center"
+  class="grid gap-4 md:gap-4 mt-2 p-2 flex justify-content-center"
 >
-  <mat-card class="col-12 sm:col-12 md:col-6 xl:col-6 max-w-max p-0">
-    <mat-card-header class="mb-3 px-0">
+  <mat-card class="col-12 max-w-max p-0 sm:col-12 md:col-6">
+    <mat-card-header class="mb-3 pl-3">
       <img mat-card-avatar class="mt-2" [src]="hero | heroeImage" />
       <mat-card-title class="text-3xl">{{ hero.superhero }}</mat-card-title>
       <mat-card-subtitle>{{ hero.publisher }}</mat-card-subtitle>
@@ -24,14 +24,14 @@
     />
   </mat-card>
 
-  <mat-card class="max-w-max">
-    <mat-card-header class="mb-4 px-0 md:px-4">
+  <mat-card class="w-screen md:max-w-25rem">
+    <mat-card-header class="mb-4 px-0 md:px-4 flex justify-content-center">
       <mat-card-title class="text-3xl">Información</mat-card-title>
     </mat-card-header>
 
     <mat-card-content class="px-0 md:px-4">
       <mat-list>
-        <mat-list-item class="mb-3 px-0">
+        <mat-list-item class="mt-2 mb-3 px-0">
           <strong>Primera aparición: </strong><br />{{ hero.first_appearance }}
         </mat-list-item>
 
@@ -49,6 +49,7 @@
         </mat-list-item>
       </mat-list>
     </mat-card-content>
+    <span class="spacer"></span>
     <mat-card-actions align="start" class="px-2">
       <button mat-button mat-raised color="warn" (click)="goBack()">
         <mat-icon class="mat-18">arrow_back</mat-icon>
