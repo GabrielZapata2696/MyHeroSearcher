@@ -24,7 +24,7 @@ export class SearchPageComponent {
   public searchHero(): void {
     const value: string = this.searchInput.value || '';
     if (value === '') { return; }
-    this.heroService.getSugestions(value)
+    this.heroService.getSuggestions(value)
       .subscribe(heroes => { this.heroes = heroes })
   }
 

@@ -29,22 +29,26 @@
       <mat-card-title class="text-3xl">Información</mat-card-title>
     </mat-card-header>
 
-    <mat-card-content class="px-0 md:px-4">
+    <mat-card-content class="px-4">
       <mat-list>
         <mat-list-item class="mt-2 mb-3 px-0">
-          <strong>Primera aparición: </strong><br />{{ hero.first_appearance }}
+          <strong class="text-lg">Primera aparición: </strong><br />{{
+            hero.first_appearance
+          }}
         </mat-list-item>
 
         <mat-list-item class="mb-3 px-0">
-          <strong>Publisher: </strong><br />{{ hero.publisher }}
+          <strong class="text-lg">Publisher: </strong><br />{{ hero.publisher }}
         </mat-list-item>
 
         <mat-list-item class="mb-3 px-0">
-          <strong>Alter ego principal: </strong><br />{{ hero.alter_ego }}
+          <strong class="text-lg">Alter ego principal: </strong><br />{{
+            hero.alter_ego
+          }}
         </mat-list-item>
 
         <mat-list-item class="mb-3 px-0">
-          <strong>Personajes: </strong><br />
+          <strong class="text-lg">Personajes: </strong><br />
           {{ hero.characters }}
         </mat-list-item>
       </mat-list>
@@ -53,7 +57,7 @@
     <mat-card-actions align="start" class="px-2">
       <button mat-button mat-raised color="warn" (click)="goBack()">
         <mat-icon class="mat-18">arrow_back</mat-icon>
-        Regresar
+        <span class="text-lg">Regresar</span>
       </button>
     </mat-card-actions>
   </mat-card>
